@@ -1,6 +1,6 @@
 # Anki Controller Projekt
 
-Vier Taster lösen auf einer RGB-LED jeweils einen kurzen Farbblitz (200 ms) aus — jeder Taster hat eine fest zugeordnete Farbe. Vorstufe zu einem geplanten physischen Anki-Antwort-Controller.
+Vier Taster lösen auf einer RGB-LED jeweils einen kurzen Farbblitz (200 ms) aus, jeder Taster hat eine fest zugeordnete Farbe. Vorstufe zu einem geplanten physischen Anki-Antwort-Controller.
 
 **Pins:**
 
@@ -14,8 +14,8 @@ Vier Taster lösen auf einer RGB-LED jeweils einen kurzen Farbblitz (200 ms) aus
 | RGB Grün | 3 |
 | RGB Blau | 4 |
 
-Jeder Tastendruck löst per Edge-Detection genau **einen** Blitz aus — kein Dauerleuchten beim Halten. Ein kurzes `delay(20)` am Ende von `loop()` fängt das Kontaktprellen beim Loslassen ab, sonst zündet der Blitz manchmal doppelt.
+Jeder Tastendruck löst per Edge-Detection genau **einen** Blitz aus, kein Dauerleuchten beim Halten. Ein kurzes `delay(20)` am Ende von `loop()` fängt das Kontaktprellen beim Loslassen ab, sonst zündet der Blitz manchmal doppelt.
 
-**Nächster Schritt:** Ausbau zum echten Anki-Answer-Clicker — der MEGA hat kein natives USB-HID, dafür braucht's eine Python-Bridge zu AnkiConnect.
+**Nächster Schritt:** Ausbau zum echten Anki-Answer-Clicker, der MEGA hat kein natives USB-HID, dafür braucht's eine Python-Bridge zu AnkiConnect.
 
 ![Aufbau](Schaltplan/Aufbau.jpg)
